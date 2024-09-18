@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án tốt nghiệp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <div class="contain">
+        <div class="child phat">
+            <img class="imganhphat" src="phat.png" alt="" />
+            <img class="may" src="may.jpg" alt="" />
+          </div>
+        <div class="child img--bantho">
+            <img class="quehuong" src="nhang.png" alt="" />
+            <img class="temple" src="Picture1.png" alt="" />
+          </div>
+        <form id="wishForm">
+            <input type="text" placeholder="Nhập điều ước của thí chủ vào đây nè 🙏" id="wish" name="wish" required/>
+            <input type="hidden" name="btnThaphuong" value="Thắp Hương" id="btnThaphuong">
+            <button type="submit" type="button" class="btn" id="submitBtn">Gửi Ước Nguyện</button>
+        </form>
+        <button id="toggleTreeButton"></button>
+        <div id="wishTree">
+            <img src="tree1-bg.png" alt="Cây Ước Nguyện" id="treeImage">
+            <div id="tagsContainer"></div>
+        </div>
+        <div id="wishModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="wishContent"></p>
+            </div>
+        </div>
+        <audio id="daihongchung" src="daihongchung.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+    <script src="animation.js"></script> 
+
+</body>
+
+</html>

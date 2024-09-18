@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hoa-sen {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .hoa-sen .cach-hoa {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid #ff69b4; /* Màu của cánh hoa */
+      border-radius: 50%;
+      transform: rotate(45deg);
+    }
+    
+    .hoa-sen .cach-hoa:nth-child(1) { transform: rotate(0deg); }
+    .hoa-sen .cach-hoa:nth-child(2) { transform: rotate(72deg); }
+
+  </style>
+</head>
+<body>
+  <div class="hoa-sen">
+    <div class="cach-hoa"></div>
+    <div class="cach-hoa"></div>
+
+  </div>
+</body>
+</html>
